@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --concreto: #E2DFD8;
     --concreto-escuro: #CBC7BE;
     --tinta: #0F1E3D;
@@ -12,58 +13,66 @@
     --branco: #FFFFFF;
 
     --fonte-cartaz: "Big Shoulders", "Arial Narrow", sans-serif;
-    --fonte-texto:"Archivo", Arial, sans-serif;
+    --fonte-texto: "Archivo", Arial, sans-serif;
 }
-body{
+
+body {
     background: var(--concreto);
     color: var(--tinta);
     font-family: var(--fonte-texto);
     font-size: 17px;
     line-height: 1.55;
 }
-a{
+
+a {
     color: inherit;
 }
-h1, h2, h3{
+
+h1, h2, h3 {
     font-family: var(--fonte-cartaz);
     font-weight: 900;
     line-height: 0.95;
+
 }
+
 .conteudo{
-    max-width: 1200;
+    max-width: 1200px;
     margin-inline: auto;
     padding-inline: 32px;
 }
+
 .topo{
     padding-block: 28px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex
 }
+
 .logo{
-    font: var(--fonte-cartaz);
+    font-family: var(--fonte-cartaz);
     font-size: 34px;
     font-weight: 900;
     text-decoration: none;
 }
+
 .menu{
     display: flex;
     gap: 36px;
-
 }
+
 .menu a{
     font-weight: 600;
     text-decoration: none;
-    padding: 4px;
+    padding-bottom: 4px;
     border-bottom: 4px solid transparent;
 }
 
-.menu a:hover{
+.menu a:hover {
     border-bottom-color: var(--tinta);
 }
 
 .menu a.atual{
-    border-bottom-color:var(--fita) ;
+    border-bottom-color: var(--fita);
 }
 
 .cartazes {
@@ -79,7 +88,7 @@ h1, h2, h3{
 .cartaz-principal{
     background: var(--caixa-dagua);
     color: var(--branco);
-    flex: 2px;
+    flex: 2;
 }
 
 .cartaz-principal h1{
@@ -87,8 +96,8 @@ h1, h2, h3{
     max-width: 9ch;
 }
 
-.cartaz-lateral{
-    background-color: var(--fita);
+.cartaz-lateral {
+    background: var(--fita);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -104,17 +113,19 @@ h1, h2, h3{
 }
 
 .botao{
-    background-color: var(--tinta);
+    background: var(--tinta);
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
     padding: 16px 28px;
     border: none;
-    font: var(--fonte-texto);
     font-size: 17px;
+    font-family: var(--fonte-texto);
     cursor: pointer;
 }
 
-.botao:hover{
-    background-color: var(--caixa-dagua);
+.botao:hover {
+    background: var(--caixa-dagua);
 }
+
+
